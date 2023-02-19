@@ -1,0 +1,52 @@
+@media(min-width: 769px){
+    .h-o-tab{
+        display: none;
+    }
+    .aside{
+        left:0
+    }
+    .main{
+        width: calc(100% - 300px);
+    }
+    .narrow-content{
+        padding: 0 25px;
+    } 
+
+    .con{
+        opacity: 0;
+    }
+    .project:hover .con{
+        background:var(--blue-color);
+        opacity: 1;
+    }
+    .project .con >h3{
+        transform:translate3d(0,15px,0);
+        margin-bottom: 15px;
+        transition: .5s;
+    }
+    .project .con >span{
+        transform:translate3d(0,-15px,0);
+        transition: .5s;
+    }
+    .project:hover .con >h3,
+    .project:hover .con >span{
+        transform:translate3d(0,0,0);
+    }
+}
+@media (min-width: 1113px) {
+    .c{
+        padding: 0;
+    }
+    .aside{
+        left:unset;
+    }
+    .services{
+        margin-bottom: 80px;
+    }
+    .btn-primary{
+        display: inline-block;
+    }
+    .contact-box .form-group{
+        margin-top:0;
+    }
+}
